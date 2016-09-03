@@ -103,7 +103,7 @@ trait Helper
         // item is a collection.
         if ($item instanceof Collection) {
             $item = $this->collectionAsArray(
-                $item->lists('name')
+                $item->pluck('name')
             );
         }
 
